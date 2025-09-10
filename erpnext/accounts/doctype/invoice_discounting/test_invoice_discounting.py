@@ -370,6 +370,8 @@ class TestInvoiceDiscounting(unittest.TestCase):
 	def test_get_invoices_TC_ACC_567(self):
 		from erpnext.accounts.doctype.invoice_discounting.invoice_discounting import get_invoices
 		import json
+		from erpnext.accounts.doctype.payment_entry.test_payment_entry import get_or_create_fiscal_year
+		get_or_create_fiscal_year()
 
 		customer = create_customer(customer_name="_Test Customer", company="_Test Company", currency="INR")
 		other_customer = create_customer(customer_name="_Another Test Customer", company="_Test Company", currency="INR")
