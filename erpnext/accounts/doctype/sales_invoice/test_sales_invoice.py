@@ -8028,7 +8028,7 @@ def create_customer(**args):
 			customer.append("companies", {"company": args.get("company")})
 			customer.save()
 
-		return customer
+	return customer
 
 
 def create_accounts(**args):
