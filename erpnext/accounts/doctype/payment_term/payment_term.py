@@ -11,7 +11,7 @@ class PaymentTerm(Document):
 
 	from typing import TYPE_CHECKING
 
-	if TYPE_CHECKING: # pragma: no cover
+	if TYPE_CHECKING:
 		from frappe.types import DF
 
 		credit_days: DF.Int
